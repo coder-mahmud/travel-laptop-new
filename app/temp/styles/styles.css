@@ -678,12 +678,16 @@ a{
 	text-align: center;
 
 
+
+
 }
 
 @media (min-width:530px){
 
 .section-title{
 		font-size: 3.75rem
+
+
 
 
 }
@@ -699,22 +703,26 @@ a{
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: .6rem;
+
+
+
 	}
 
 @media (min-width:530px){
 
-.section-title{
-		margin-right: .5rem;
-		margin-left: 0;
-		display: inline-block;
-		margin-bottom: 0
+.section-title__icon{
+			margin-right: .5rem;
+			margin-left: 0;
+			display: inline-block;
+			margin-bottom: 0
 
 
-}
+
+	}
 	}
 
 .feature-item{
-	padding-left: 94px;
+	
 	position: relative;
 	padding-bottom: 2.5rem;
 
@@ -722,14 +730,41 @@ a{
 
 }
 
-.feature-item__icon{
-		position: absolute;
-		left: 0;
+@media (min-width:530px){
+
+.feature-item{
+		padding-left: 94px
+
+	
+
+}
 	}
 
+.feature-item__icon{
+		display: block;
+	}
+
+.feature-item__icon margin:0 auto
+
+		@mixin atSmall{
+			position: absolute;
+			left: 0;
+		}
+
 .feature-item__title{
-		font-size: 1.875rem;
+		font-size: 1.6rem;
 		font-weight: 300;
 		margin-bottom: .8rem;
+		margin-top: .7em;
+		text-align: center;
+	}
+
+@media (min-width:530px){
+
+.feature-item__title{
+			font-size: 1.875rem;
+			margin-top: 1em;
+			text-align: left
+	}
 	}
 
