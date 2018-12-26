@@ -888,14 +888,16 @@ a{
 
 .feature-item__icon{
 		display: block;
+		margin:0 auto;
 	}
 
-.feature-item__icon margin:0 auto
+@media (min-width:530px){
 
-		@mixin atSmall{
+.feature-item__icon{
 			position: absolute;
-			left: 0;
-		}
+			left: 0
+	}
+	}
 
 .feature-item__title{
 		font-size: 1.6rem;
